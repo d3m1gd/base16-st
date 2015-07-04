@@ -1,0 +1,62 @@
+diff --git a/config.def.h b/config.def.h
+index 64e75b8..ae02761 100644
+--- a/config.def.h
++++ b/config.def.h
+@@ -62,24 +62,32 @@ static unsigned int tabspaces = 8;
+ /* Terminal colors (16 first used in escape sequence) */
+ static const char *colorname[] = {
+ 	/* 8 normal colors */
+-	"black",
+-	"red3",
+-	"green3",
+-	"yellow3",
+-	"blue2",
+-	"magenta3",
+-	"cyan3",
+-	"gray90",
++	"#031A16", /* color   0 */
++	"#3E9688", /* color   1 */
++	"#883E96", /* color   2 */
++	"#3E4C96", /* color   3 */
++	"#96883E", /* color   4 */
++	"#4C963E", /* color   5 */
++	"#963E4C", /* color   6 */
++	"#81B5AC", /* color   7 */
+ 
+ 	/* 8 bright colors */
+-	"gray50",
+-	"red",
+-	"green",
+-	"yellow",
+-	"#5c5cff",
+-	"magenta",
+-	"cyan",
+-	"white",
++	"#2B685E", /* color   8 */
++	"#3E9688", /* color   9 */
++	"#883E96", /* color  10 */
++	"#3E4C96", /* color  11 */
++	"#96883E", /* color  12 */
++	"#4C963E", /* color  13 */
++	"#963E4C", /* color  14 */
++	"#D2E7E4", /* color  15 */
++
++	/* additional colors */
++	"#3E7996", /* color  16 */
++	"#3E965B", /* color  17 */
++	"#0B342D", /* color  18 */
++	"#184E45", /* color  19 */
++	"#5F9C92", /* color  20 */
++	"#A7CEC8", /* color  21 */
+ 
+ 	[255] = 0,
+ 
+@@ -94,7 +102,7 @@ static const char *colorname[] = {
+  */
+ static unsigned int defaultfg = 7;
+ static unsigned int defaultbg = 0;
+-static unsigned int defaultcs = 256;
++static unsigned int defaultcs = 7;
+ 
+ /*
+  * Colors used, when the specific fg == defaultfg. So in reverse mode this
