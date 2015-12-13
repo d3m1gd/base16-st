@@ -1,0 +1,61 @@
+diff --git a/config.def.h b/config.def.h
+index fd09d72..e9e0f90 100644
+--- a/config.def.h
++++ b/config.def.h
+@@ -70,30 +70,38 @@ static unsigned int tabspaces = 8;
+ /* Terminal colors (16 first used in escape sequence) */
+ static const char *colorname[] = {
+ 	/* 8 normal colors */
+-	"black",
+-	"red3",
+-	"green3",
+-	"yellow3",
+-	"blue2",
+-	"magenta3",
+-	"cyan3",
+-	"gray90",
++	"#1C2023", /* color base00 */
++	"#C7AE95", /* color base08 */
++	"#95C7AE", /* color base0B */
++	"#AEC795", /* color base0A */
++	"#AE95C7", /* color base0D */
++	"#C795AE", /* color base0E */
++	"#95AEC7", /* color base0C */
++	"#C7CCD1", /* color base05 */
+ 
+ 	/* 8 bright colors */
+-	"gray50",
+-	"red",
+-	"green",
+-	"yellow",
+-	"#5c5cff",
+-	"magenta",
+-	"cyan",
+-	"white",
++	"#747C84", /* color base03 */
++	"#C7AE95", /* color base08 */
++	"#95C7AE", /* color base0B */
++	"#AEC795", /* color base0A */
++	"#AE95C7", /* color base0D */
++	"#C795AE", /* color base0E */
++	"#95AEC7", /* color base0C */
++	"#F3F4F5", /* color base07 */
++
++	/* additional colors */
++	"#C7C795", /* color base09 */
++	"#C79595", /* color base0F */
++	"#393F45", /* color base01 */
++	"#565E65", /* color base02 */
++	"#ADB3BA", /* color base04 */
++	"#DFE2E5", /* color base06 */
+ 
+ 	[255] = 0,
+ 
+ 	/* more colors can be added after 255 to use with DefaultXX */
+-	"#cccccc",
+-	"#555555",
++	"#565E65", /* color base02 */
++	"#F3F4F5", /* color base07 */
+ };
+ 
+ 
