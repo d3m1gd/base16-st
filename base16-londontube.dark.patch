@@ -1,8 +1,8 @@
 diff --git a/config.def.h b/config.def.h
-index 64e75b8..6e2c52d 100644
+index fd09d72..f46c255 100644
 --- a/config.def.h
 +++ b/config.def.h
-@@ -62,24 +62,24 @@ static unsigned int tabspaces = 8;
+@@ -70,30 +70,30 @@ static unsigned int tabspaces = 8;
  /* Terminal colors (16 first used in escape sequence) */
  static const char *colorname[] = {
  	/* 8 normal colors */
@@ -43,12 +43,11 @@ index 64e75b8..6e2c52d 100644
  
  	[255] = 0,
  
-@@ -94,7 +94,7 @@ static const char *colorname[] = {
-  */
- static unsigned int defaultfg = 7;
- static unsigned int defaultbg = 0;
--static unsigned int defaultcs = 256;
-+static unsigned int defaultcs = 7;
+ 	/* more colors can be added after 255 to use with DefaultXX */
+-	"#cccccc",
+-	"#555555",
++	"#d9d8d8",
++	"#231f20",
+ };
  
- /*
-  * Colors used, when the specific fg == defaultfg. So in reverse mode this
+ 
