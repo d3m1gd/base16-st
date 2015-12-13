@@ -1,5 +1,5 @@
 diff --git a/config.def.h b/config.def.h
-index fd09d72..82d001c 100644
+index fd09d72..1ba8b71 100644
 --- a/config.def.h
 +++ b/config.def.h
 @@ -70,30 +70,38 @@ static unsigned int tabspaces = 8;
@@ -58,4 +58,15 @@ index fd09d72..82d001c 100644
 +	"#f5eeeb", /* color base07 */
  };
  
+ 
+@@ -101,8 +109,8 @@ static const char *colorname[] = {
+  * Default colors (colorname index)
+  * foreground, background, cursor, reverse cursor
+  */
+-static unsigned int defaultfg = 7;
+-static unsigned int defaultbg = 0;
++static unsigned int defaultfg = 256;
++static unsigned int defaultbg = 257;
+ static unsigned int defaultcs = 256;
+ static unsigned int defaultrcs = 257;
  
